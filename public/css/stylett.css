@@ -1,0 +1,875 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.error {
+    font-size: 20px;
+    color: red;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    border-bottom: 2px solid #e8ebed;
+    position: sticky;
+    z-index: 2;
+    background-color: #fff;
+    top: 0;
+}
+
+.header_search {
+    border: 2px solid #e8e8e8;
+    border-radius: 20px;
+    flex: 1 1;
+    height: 40px;
+    padding: 0 16px 0 0;
+    width: 350px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header_search-input {
+    border: none;
+    caret-color: #444;
+    flex: 1 1;
+    height: 100%;
+    outline: none;
+    padding: 0 15px;
+}
+.header_search button{
+    border: none;
+    background-color: initial;
+}
+.header_search i{
+    font-size: 20px;
+    font-weight: bold;
+    margin:10px 0 0 90px;
+}
+
+.header-icon {
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.header-login--btn {
+    background-color: #3d3d3d;
+    border-radius: 999px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 9px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.header-login {
+    position: absolute;
+    right: 35px;
+}
+
+.header-img {
+    border-radius: 8px;
+    flex-shrink: 0;
+    /* height: 150px; */
+    object-fit: contain;
+    width: 60px;
+}
+
+.user_avt{
+    border-radius: 50%;
+    flex-shrink: 0;
+    height: 38px;
+    width: 65px;
+}
+
+.show_menu{
+    position: absolute;
+    top: 30px;
+    left: -100px;
+    display: none;
+    background-color: #fff
+    
+}
+.show_menu:hover{
+    display: block;
+}
+
+.user_list{
+    width: 150px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.user_list-item{
+    margin-left: 10px;
+}
+
+.nav_list {
+    display: inline-block;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.nav_item {
+    margin: 10px 0px;
+    transition: all 0.5s ease;
+    border-bottom: 5px solid transparent;
+    opacity: 0.8;
+    font-size: 15px;
+
+}
+
+.nav_item a {
+    text-decoration: none;
+    padding: 24px 20px;
+    color: black;
+}
+
+.nav_item a:hover {
+    background-color: rgb(197 112 128);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header-login--btn:hover {
+    background-color: rgb(197 112 128);
+}
+
+.nav_list .line {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 3px;
+    border-radius: 15px;
+    background-color: rgb(197 112 128);
+    transition: all 0.2s ease;
+}
+
+.nav_item.active1 {
+    opacity: 1.5;
+    font-size: 16px;
+}
+
+.box-menu {
+    width: 100%;
+    height: 304px;
+    border: 2px solid #e8ebed;
+    margin-top: 30px;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.box-menu h3 {
+    border-bottom: 1px solid #e8ebed;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+/*Khóa hoc*/
+
+.course-video {
+    display: none;
+}
+.course-video.point {
+    display: block;
+}
+
+.icon-volume{
+    display: none;
+}
+
+.icon-volume .point {
+    display: block;
+}
+
+.course-lesson-detail .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+background-color: #c23564;
+    transition: all 0.2s ease;
+  }
+.review{
+    width: 70%;
+    margin: auto;
+    border: 1px solid #989898;
+    border-radius: 5px;
+    padding: 20px 20px 20px 100px;
+}
+.start{
+    text-align: center;
+}
+.review i{
+    color: rgb(228, 172, 3);
+}
+form{
+    /* margin:20px 0 0 15%; */
+}
+.review button{
+    background-color: #3d3d3d;
+    border-radius: 999px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.review button:hover{
+    background-color: rgb(197 112 128);
+}
+.review-title{
+    font-weight: bold;
+    text-align: center;
+}
+i{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.container ul{
+    list-style-type: none;
+}
+.container li{
+    margin: 20px 0;
+
+}
+.btn-learning{
+    margin: 30px 0 0 35px;
+}
+.btn-learning p {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.btn-learning a{
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: #3d3d3d;
+}
+.btn-learning a:hover{
+    background-color: rgb(197 112 128);
+}
+.course-content{
+    width: 85%;
+}
+.course-content a:hover{
+    color: rgb(197 112 128);
+}
+.lesson-title{
+    font-weight: 600;
+    padding: 10px 0px 10px 20px;
+    background-color:  #D9D9D9;
+}
+.lesson-title i{
+    margin-left: 95%;
+    font-weight: 600;
+    position: absolute;
+    right: 320px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin: 20px 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.lesson-detail{
+    display: none;
+}
+.lesson-detail.lesson-detail-show{
+    display: block;
+}
+.lesson-detail a{
+    color: black;
+    text-decoration: none;
+}
+.lesson-detail a:hover{
+    color: rgb(197 112 128);
+}
+.lesson-title i:hover{
+    cursor: pointer;
+    color:rgb(197 112 128);
+}
+
+/*Chi tiết khóa học*/
+.course-main-detail .col{
+    width: 40%;
+}
+.course
+.course-main-detail{
+    width: 100%;
+}
+.course-content-detail{
+    width: 100%;
+    max-height: 400px;
+    overflow:auto;
+}
+.course-video{
+    width: 100%;
+}
+.course-content-title{
+    text-align: center;
+    padding: 10px 0;
+    background-color: #989898;
+    color: #f2e9e4;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.course-lesson-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(220, 219, 219);
+    padding: 10px 0;
+}
+.course-lesson-detail #playing{
+    margin-left: 60%;
+    font-size: 13px;
+    color: rgb(197 112 128);
+}
+.course-content-detail ul{
+    margin: 0;
+    padding: 0;
+}
+.course-lesson-detail li{
+    display: block;
+    border-bottom: 1px solid #bbb;
+    opacity: 0.8;
+}
+.course-lesson-detail li:hover{
+    background-color: #bbb;
+    opacity: 1;
+}
+.course-lesson-detail p i{
+    font-size: 13px;
+    color: rgb(197 112 128);
+}
+.course-lesson-detail span{
+    margin-right: 50px;
+}
+.course-lesson-detail-title{
+    font-weight: bold;
+}
+
+
+.list_course {
+    position: absolute;
+    top: 0;
+    width: 600px;
+    background-color: #fff;
+    left: 100%;
+    z-index: 1;
+    height: 100%;
+    border-radius: 10px;
+    margin-left: 5px;
+    display: none;
+    transform-origin: 0 20%;
+    animation: Growth ease 0.3s;
+}
+
+.list_course::after {
+    content: "";
+    border: 1px solid;
+    border-color: #0072bc;
+    position: absolute;
+    height: 100%;
+    left: -4px;
+    top: 0;
+}
+
+@keyframes Growth {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+.list_course::before {
+    content: "";
+    border: 10px solid;
+    border-color: transparent #0072bc transparent transparent;
+    position: absolute;
+    left: -24px;
+    top: 67px;
+}
+
+
+.list_course h2 {
+    color: #0072bc;
+    padding-top: 15px;
+    margin-top: 0;
+}
+
+.list_course-header {
+    border-bottom: 2px solid #0072bc;
+    /* background-color: rgb(232, 221, 221); */
+    border-radius: 10px;
+
+}
+
+.list_course-detail {
+    font-size: 20px;
+}
+
+.list_course-detail a:hover {
+    color: #0072bc;
+}
+
+.menu_item:hover .list_course {
+    display: block;
+}
+
+.menu_item:hover .blur {
+    display: block;
+}
+
+.menu_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_item {
+    padding: 15px;
+border-bottom: 1px solid #e8ebed;
+    text-align: center;
+}
+
+.menu_item a {
+    text-decoration: none;
+    color: #000;
+    padding: 15px;
+}
+
+
+.menu_item:hover {
+    background-color: #eeeef2;
+    cursor: pointer;
+}
+
+.icon-book {
+    color: pink;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 5px;
+    width: 40px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 20%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.slide-img {
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.slide-show {
+    margin-top: 30px;
+}
+
+.btn-slide {
+    position: absolute;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.course {
+    width: 100%;
+    max-height: 300px;
+    background-image: url(../img/Môn\ Học.jpg);
+    background-color: rgba(0, 0, 0, .1);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+
+}
+
+.course_detail_ls{
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease 0s;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.course:hover .course_detail_ls,
+.course:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+.course_detail {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease 0s;
+    text-align: center;
+    visibility: hidden;
+    z-index: 1;
+}
+.course_detail_text,
+.course_detail_text a {
+    color: #000;
+    font-size: 16px;
+    padding: 10px 6px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.course::after {
+    background-color: rgba(136, 136, 136, 0.5);
+    content: "";
+    inset: 0;
+    opacity: 0;
+    position: absolute;
+    transition: all .3s ease 0s;
+    visibility: hidden;
+}
+
+.course:hover .course_detail,
+.course:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-header a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+
+}
+
+.list-header_icon {
+    font-size: 10px;
+margin-left: 4px;
+    position: absolute;
+    top: 5px;
+    transition: .3s ease;
+}
+
+.list-header a:hover {
+    color: rgb(197 112 128);
+    text-decoration: underline;
+}
+
+
+.auth-form__container {
+    padding: 0 32px;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form__heading {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.auth-form__switch-btn {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(197 112 128);
+    cursor: pointer;
+}
+
+.auth-form__form {
+    margin-top: 16px;
+}
+
+.auth-form_input {
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding: 0 12px;
+    border: 2px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.auth-form_controls {
+    margin-top: 20px;
+}
+
+.btn {
+    min-width: 142px;
+    height: 40px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2rem;
+}
+
+.btn.btn--primary {
+    background-color: dbdbdb;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(197 112 128);
+}
+
+.forgot_password a {
+    color: #000;
+    text-decoration: none;
+
+}
+
+.forgot_password {
+    margin: 20px 5px;
+}
+
+.forgot_password a:hover {
+    color: rgb(197 112 128);
+}
+
+.footer {
+    width: 100%;
+    background-color: #181821;
+    color: #fff;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer_info {
+    /* display: flex;
+    align-items: center;
+    padding-top: 20px; */
+}
+
+.footer_info img {
+    cursor: pointer;
+}
+
+.footer_info-detail {
+    margin: 35px 20px;
+}
+
+.footer_info-detail a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_info-detail a:hover {
+    color: rgb(197 112 128);
+}
+
+.footer_contact,
+.footer-support {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.footer_contact-detail {
+    padding-top: 10px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 50px;
+}
+
+.footer_icon {
+    padding: 0 20px;
+    cursor: pointer;
+}
+#video{
+    display: none;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.container{
+  display: flex;
+}
+.container .post{
+  display: none;
+}
+.container .star-widget input{
+  display: none;
+}
+.star-widget{
+    width:460px;
+}
+.star-widget label{
+  font-size: 20px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+.container input:not(:checked) ~ label:hover,
+.container input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+.container input:checked ~ label{
+  color: #fd4;
+}
+.container input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+
+.topic-save{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.topic-save-detail{
+    width: 20%;
+    height: auto;
+    border: 1px solid #717171;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 20px;
+}
+.topic-save-detail span{
+    font-weight: bold;
+    font-size: 18px;
+}
+.topic-save-detail a{
+    background-color: #0072bc;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+}
+.topic-save-detail a:hover{
+    background-color: #35a8f5;
+    color: white;
+    text-decoration: none;
+}
+#topic-save-title{
+    font-weight: bold;
+    font-size: 18px;
+}

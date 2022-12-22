@@ -1,0 +1,149 @@
+.title-list{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 20px 20px;
+    font-family: 'roboto-medium';
+}
+.title-list p{
+    padding: 10px;
+}
+.Loplist{
+    margin-left: 20px;
+    width: 90%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th:last-child{
+    width: 15%;
+}
+tr:first-child{
+    background-color: #0077b6;
+    height: 50px;
+}
+td{
+    height: 30px;
+}
+table a{
+    padding: 3px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+#edit{
+    background-color: #FB8500;
+}
+#delete{
+    background-color: #023047;
+}
+#detail{
+    background-color: #3C71B0;
+}
+.option-list{
+    margin:20px 20px;
+    display: flex;
+}
+.option-list a{
+    padding: 3px 10px 7px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #023e8a;
+    border: 1px solid rgb(22, 22, 22);
+    margin-top: 5px;
+}
+.option-list div{
+    margin: 0 5px;
+}
+.option-list .add{
+    margin-top: 3px;
+}
+.option-list select{
+    height: 25px;
+}
+.option-list button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+}
+.option-list button:hover{
+    background-color: #FB8500;
+    color: white;
+    cursor: pointer;
+}
+
+/*style form*/
+.class-title{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+hr{
+    width: 90%;
+    height: 2px;
+    border: none;
+    background-color:#BCB6B6;
+}
+.content form{
+    width: 50%;
+    border: 1px solid gray;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 5px;
+}
+.content form input,select{
+    width: 50%;
+    margin: 20px 0;
+    height: 30px;
+    border: 1px solid #3C71B0;
+}
+.content form button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.content form button:hover{
+    cursor: pointer;
+}
+
+#submit{
+    background-color: #FB8500;
+}
+#reset{
+    background-color: #023047;
+}
+.notify{
+    position: relative;
+}
+.notify-number{
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    padding: 0 3px;
+    border-radius: 50%;
+}
+.processed form{
+    border: none;
+}
+.processed form button{
+    position: absolute;
+    right: 150px;
+    top: 380px;
+    border-radius: 10px;
+    background-color: #0077b6;
+    color: white;
+    font-weight: bold;
+}
